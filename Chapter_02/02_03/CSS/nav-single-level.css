@@ -3,10 +3,18 @@
     .single-nav ul {
         display: flex;
         /*"justify-content: Flex-end" property sets all elements to the right */
-         /*"justify-content: Space-around" gets all list elements an equal distance-per-item size */
+        /*"justify-content: Space-around" gets all list elements an equal distance-per-item size */
+        /*"justify-content: Space-between" the very left and the very right space of the list items space is removed*/
         justify-content: space-around;
         /*"Flex-wrap:wrap" wraps all elements so that the content  doesn't get smaller regardless the screen size*/
         flex-wrap: wrap; 
-
+    }
+    .single-nav li{
+        /* flex property sintax: 
+        the first instruction s a boolean value that tells flexbox "box" to grow if  there's a bigger screen size: 
+        the other one sets box not to grow if the screen size is smaller and it will get the auto width of the smaller screen
+        */
+        flex: 1 0 auto;
+        text-align: center;
     }
 }
