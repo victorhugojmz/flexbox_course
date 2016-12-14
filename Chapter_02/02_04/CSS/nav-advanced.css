@@ -25,6 +25,6 @@
         }
         .advanced-nav li{ 
             display:flex;
-            flex: 1 0 12em;
+            flex: 1 0 9em;
         }
 }
