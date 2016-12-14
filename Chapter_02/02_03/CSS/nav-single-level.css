@@ -1,1 +1,12 @@
 /* Styles for Single Level Menu */
+@media screen and (min-width:30em){
+    .single-nav ul {
+        display: flex;
+        /*"justify-content: Flex-end" property sets all elements to the right */
+         /*"justify-content: Space-around" gets all list elements an equal distance-per-item size */
+        justify-content: space-around;
+        /*"Flex-wrap:wrap" wraps all elements so that the content  doesn't get smaller regardless the screen size*/
+        flex-wrap: wrap; 
+
+    }
+}
