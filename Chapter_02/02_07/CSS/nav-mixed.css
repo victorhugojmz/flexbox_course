@@ -1,1 +1,13 @@
 /* Styles for mixed menu (drop-down + social) */
+.nav-mixed .multi-level-nav ul {
+    background: aqua;
+}
+.nav-mixed .social-menu ul { 
+    background: aqua;
+}
+.nav-mixed {
+    display: flex;
+    background: aqua;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
