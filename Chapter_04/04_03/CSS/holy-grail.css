@@ -44,3 +44,30 @@
 	text-align: center;
 	background: hsl(0, 0%, 75%);
 }
+/*flexbox*/
+@media screen and (min-width:40em){
+	.main-area {
+		flex: 1 1 auto;
+		/*Re ordering layout elements gets way easier with order, you just need to specify the order number elements appear in layout.*/
+		/*for example: the main area gets the order of 1 but sidebar has order one, so that simple line of code will place our sidebar before the main area due to content assining*/
+		order: 1;
+	}
+	.outer-wrap {
+		display: flex;
+		flex-direction: column;
+	}
+	.content { 
+		display: flex;
+	}
+	.sidebar{
+		flex: 0 0 12em;
+		order: 0;
+	}
+	.footer-area { 
+		order: 2;
+	}
+	.post-content{
+		max-width: 40em;
+		margin: 0 auto;
+	} 
+}
