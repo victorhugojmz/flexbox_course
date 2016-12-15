@@ -1,11 +1,11 @@
 /* Card Based Layout - Base styles */
 
 body {
-	background: hsl(0, 0%, 90%);
+	background: black;
 }
 
 .masthead {
-	background: hsl(0, 0%, 20%);`
+	background: hsl(0, 0%, 20%);
 }
 
 .site-title {
@@ -27,15 +27,39 @@ body {
 }
 
 .card-content {
-	padding: 1.4em;
+	padding: .5em;
 }
-
 .card-content h2 {
 	margin-top: 0;
 	margin-bottom: .5em;
 	font-weight: normal;
+	color: aqua;
 }
-
 .card-content p {
 	font-size: 95%;
+}
+/*Flexbox Stuff*/
+@media screen and (min-width:40em){
+		.cards {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			margin-top: -1em; 	
+		}
+		.card {
+			display: flex;
+			flex: 0 1;
+			flex-basis: calc(50% - .25em);
+			/*You can also use width: calc(33% - .5em) so that this function has all browser compatibility*/
+			margin-bottom: .5em;
+		}
+}
+@media screen and (min-width:60em){ 
+	 .cards {
+		 margin-top: inherit;
+	 } 
+	 .card {
+		    flex-basis: calc(33% - 1em);
+			margin-bottom: 1em;
+		}
 }
