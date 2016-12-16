@@ -1,6 +1,3 @@
-/* Styles for social media menu */
-
-/* Find src URL and add in correct social media icon. */
 .social-menu li a:before {
     font-family: 'Fontawesome';
     -webkit-font-smoothing: antialiased;
